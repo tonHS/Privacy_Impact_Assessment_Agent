@@ -20,8 +20,6 @@ This skill produces PIAs aligned with:
 - **GDPR**: Art. 35 DPIA requirements (EU standard)
 - **General best practice**: ISO 29134, NIST Privacy Framework
 
-Read `references/legislative-reference.md` for a jurisdiction-by-jurisdiction breakdown of key statutory provisions and enforcement decisions to cite in the PIA.
-
 ---
 
 ## Agent Workflow
@@ -99,7 +97,7 @@ Once information is gathered, produce the full PIA document using the structure 
 - Flag any items that require legal review, DPA consultation, or executive sign-off
 - If information was not provided, note it as a **gap requiring follow-up** rather than omitting it
 - **Cite specific legislation**: Every legal requirement identified in Section 5 must cite the specific statutory provision (e.g., "PIPEDA, Schedule 1, Principle 4.3" or "BC PIPA, s. 11"). Do not state a legal requirement without its source.
-- **Cite enforcement decisions where relevant**: Where an identified risk has been the subject of a regulatory finding, Commissioner investigation, or court decision, note the case reference. Use `references/legislative-reference.md` for known citations; flag where the user should obtain additional legal research.
+- **Cite enforcement decisions where relevant**: Where an identified risk has been the subject of a regulatory finding, Commissioner investigation, or court decision, note the case reference; flag where the user should obtain additional legal research.
 - **Distinguish legal requirements from best practice**: Clearly mark each compliance item as either a statutory requirement (citing the provision) or a recommended best practice (noting the source framework, e.g., ISO 29134 §8.4).
 
 ---
@@ -637,7 +635,7 @@ For each category of processing, state the lawful basis and cite the provision:
 [Is a mandatory PIA or DPIA required? Cite: Quebec Law 25, s. 3.3 (PIA required for new projects involving PI); GDPR Art. 35 (DPIA required for high-risk processing). Note whether requirement is triggered and whether assessment satisfies it.]
 
 **5.7 Relevant Enforcement Decisions**
-[List any regulatory findings, Commissioner reports, or court decisions relevant to this type of processing. Include citation (e.g., OIPC BC Order P22-01; OPC PIPEDA Report of Findings #2022-001; *Chitrakar v. Bell TV*, 2013 FC 1103). Flag where further legal research is required. See `references/legislative-reference.md` for known citations.]
+[List any regulatory findings, Commissioner reports, or court decisions relevant to this type of processing. Include citation (e.g., OIPC BC Order P22-01; OPC PIPEDA Report of Findings #2022-001; *Chitrakar v. Bell TV*, 2013 FC 1103). Flag where further legal research is required.]
 
 ---
 
