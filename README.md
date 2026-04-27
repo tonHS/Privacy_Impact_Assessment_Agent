@@ -70,7 +70,8 @@ The skill includes detailed statutory provisions and key enforcement decisions f
 - **PIPEDA** (Federal) — 10 Schedule 1 principles, breach notification (s. 10.1), third-party accountability. https://laws-lois.justice.gc.ca/eng/acts/P-8.6/index.html  
 - **BC PIPA** (SBC 2003, c. 63) — Consent structure, access Part 7-8. https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01
 - **Alberta PIPA** (SA 2003, c. P-6.5) — Breach notification (s. 34.1), employee-specific provisions, 45-day access rights (s.28) https://kings-printer.alberta.ca/documents/Acts/P06P5.pdf 
-- **Quebec Law 25** (Bill 64) — Mandatory PIA before project launch (s. 3.3), Privacy by Default (s. 9), portability (s.27) and deletion rights (s.23), significant penalties (s.90.1, 90.12). https://www.legisquebec.gouv.qc.ca/fr/document/lc/p-39.1?langCont=en 
+- **Quebec Law 25** (Bill 64) — Mandatory PIA before project launch (s. 3.3), Privacy by Default (s. 9), portability (s.27) and deletion rights (s.23), significant penalties (s.90.1, 90.12). https://www.legisquebec.gouv.qc.ca/fr/document/lc/p-39.1?langCont=en
+- Parts of Europe's GDPR and America's NIST
 
 
 All citations distinguish between legal requirements and best practices, and flag compliance gaps explicitly.
