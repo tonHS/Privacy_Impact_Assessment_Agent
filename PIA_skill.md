@@ -20,8 +20,6 @@ This skill produces PIAs aligned with:
 - **GDPR**: Art. 35 DPIA requirements (EU standard)
 - **General best practice**: ISO 29134, NIST Privacy Framework
 
-Read `references/legislative-reference.md` for a jurisdiction-by-jurisdiction breakdown of key statutory provisions and enforcement decisions to cite in the PIA.
-
 ---
 
 ## Agent Workflow
@@ -60,8 +58,6 @@ If no high-risk factors apply, note that a lighter-touch Privacy Review may suff
 
 Work through each section below. For each, ask the questions provided, record answers, and flag gaps. Tell the user you will go section by section and they can answer in plain language.
 
-Read `references/pia-questions.md` for the full question bank. Use it to probe deeper where answers are thin.
-
 ---
 
 ### Phase 2 — Risk Assessment
@@ -89,8 +85,6 @@ Apply the risk matrix to each identified risk before drafting mitigations.
 
 ### Phase 3 — Draft the PIA Document
 
-Once information is gathered, produce the full PIA document using the structure in `references/pia-template.md`.
-
 **Drafting rules:**
 - Write in plain language; avoid jargon where possible
 - Be specific — vague statements like "data is protected" are not acceptable
@@ -99,7 +93,7 @@ Once information is gathered, produce the full PIA document using the structure 
 - Flag any items that require legal review, DPA consultation, or executive sign-off
 - If information was not provided, note it as a **gap requiring follow-up** rather than omitting it
 - **Cite specific legislation**: Every legal requirement identified in Section 5 must cite the specific statutory provision (e.g., "PIPEDA, Schedule 1, Principle 4.3" or "BC PIPA, s. 11"). Do not state a legal requirement without its source.
-- **Cite enforcement decisions where relevant**: Where an identified risk has been the subject of a regulatory finding, Commissioner investigation, or court decision, note the case reference. Use `references/legislative-reference.md` for known citations; flag where the user should obtain additional legal research.
+- **Cite enforcement decisions where relevant**: Where an identified risk has been the subject of a regulatory finding, Commissioner investigation, or court decision, note the case reference; flag where the user should obtain additional legal research.
 - **Distinguish legal requirements from best practice**: Clearly mark each compliance item as either a statutory requirement (citing the provision) or a recommended best practice (noting the source framework, e.g., ISO 29134 §8.4).
 
 ---
@@ -134,7 +128,7 @@ Default output order:
 
 Always include this note in the final document:
 
-> *This Privacy Impact Assessment was prepared as a structured analysis tool. It does not constitute legal advice. Organizations should seek advice from qualified privacy counsel and, where required, consult with their applicable Data Protection Authority before proceeding with high-risk processing activities.*
+> *This Privacy Impact Assessment was prepared as a structured analysis tool using artificial intelligence. It does not constitute legal advice. Organizations should seek advice from qualified privacy counsel and, where required, consult with their applicable Data Protection Authority before proceeding with high-risk processing activities.*
 -e 
 
 ---
@@ -170,7 +164,7 @@ This reference contains the full question set for each PIA section. The agent sh
 - Who are the key business stakeholders?
 - What legal/compliance team has (or should have) oversight?
 - If third-party vendors are involved: who manages those vendor relationships?
-- Is there a Data Protection Officer (DPO) appointed? (required under GDPR and Quebec Law 25 for some organizations)
+- Is there a Data Protection Officer (DPO) appointed? (required under GDPR Art. 37)
 
 ---
 
@@ -251,7 +245,7 @@ This reference contains the full question set for each PIA section. The agent sh
   - Other (describe)
 - For each third party: What data do they receive? For what purpose? Under what agreement?
 - Is any data transferred across borders? To which countries?
-- Are any receiving countries considered adequate under the applicable privacy law (e.g., GDPR adequacy, PIPEDA Schedule 1)? If not, what safeguards apply?
+- Are any receiving countries considered adequate under the applicable privacy law (e.g., GDPR adequacy)? If not, what safeguards apply?
 
 ### 4d. Retention and Disposal
 
@@ -274,60 +268,131 @@ This reference contains the full question set for each PIA section. The agent sh
 
 **Purpose:** Assess compliance with applicable privacy law. Every legal requirement identified must be cited to its specific statutory provision. Where relevant enforcement decisions exist, note them.
 
-**Citation standard:** Do not state "the law requires X" — state "PIPEDA, Schedule 1, Principle 4.3 requires X" or "BC PIPA, s. 11(1) requires X." Use `references/legislative-reference.md` for a ready-made citation reference. Flag items needing additional legal research rather than leaving them uncited.
+**Citation standard:** Do not state "the law requires X" — state "PIPEDA, Schedule 1, Principle 4.3 requires X" or "BC PIPA, s. 11(1) requires X." Flag items needing additional legal research rather than leaving them uncited.
 
-- What privacy law(s) apply to this initiative? (PIPEDA / Quebec Law 25 / BC PIPA / Alberta PIPA / PHIPA / GDPR / CCPA / HIPAA / other)
-  - **BC PIPA applies** if the organization is a private-sector organization operating in BC collecting PI of BC residents in employment or commercial contexts (BC PIPA, s. 3)
-  - **Alberta PIPA applies** if the organization is a private-sector organization operating in Alberta (Alberta PIPA, s. 4)
-  - Note: BC and Alberta are "substantially similar" jurisdictions under PIPEDA — PIPEDA does not apply to provincially-regulated activities within those provinces (PIPEDA, s. 26(2)(b))
-- Is there a Privacy Policy / Notice that covers this processing? Is it accurate and up to date?
-- Does this processing require individual consent? Has that consent mechanism been designed and tested?
-  - Under BC PIPA: consent required for collection, use, and disclosure (ss. 6, 11, 16); consent may be express or implied depending on sensitivity (s. 8)
-  - Under Alberta PIPA: consent required (ss. 7, 14, 19); reasonable person standard for implied consent (s. 8)
-- Does the organization have a legal basis for processing under each applicable law?
-- Are individuals' rights honoured? (right to access, correction, deletion, withdrawal of consent, portability, objection)
-- Is there a process for individuals to exercise these rights?
-- Are data processing agreements in place with all vendors who process personal data on behalf of the organization?
-- Are there any sector-specific requirements that apply? (e.g., OSFI, FINTRAC, PHIPA, FERPA)
-- Does this initiative require a mandatory DPIA under GDPR Art. 35 or a PIA under Quebec Law 25, s. 3.3?
-- If applicable: Has a Data Protection Authority (DPA) consultation been completed or planned?
+### 5a. Jurisdictional Scope
 
-### BC PIPA — Specific Questions
+- Which privacy law(s) apply to this initiative? Select all that apply and document the basis for each:
+  - PIPEDA (SC 2000, c. 5) — applies to commercial activities and federally regulated employers (s. 4)
+  - BC PIPA (SBC 2003, c. 63) — applies to private-sector organizations in connection with the operation of a business in BC (s. 3)
+  - Alberta PIPA (SA 2003, c. P-6.5) — applies to private-sector organizations in respect of PI they collect, use, or disclose (s. 4)
+  - Quebec Law 25 / Act respecting the protection of personal information in the private sector (CQLR c. P-39.1)
+  - PHIPA (Ontario), HIA (Alberta), or other provincial health-sector statute
+  - GDPR — where the organization offers goods/services to, or monitors behaviour of, individuals in the EU/EEA (Art. 3)
+  - CCPA/CPRA, HIPAA, COPPA, FERPA, or other US/sector statute
+  - Sector-specific Canadian rules (OSFI, FINTRAC, CRTC/CASL, etc.)
+- Where is the organization established, and where are the data subjects located? (In Canada, determines whether a substantially similar provincial law applies)
+- If in Canada, is the organization a federal work, undertaking, or business (bank, telecom, interprovincial transport, airline)? If yes, PIPEDA applies regardless of province.
+- In Canada, is any processing carried out across provincial, territorial or national borders, such as by a controller/processor located outside Canada? If yes, PIPEDA applies
 
-Ask these if BC PIPA applies:
+### 5b. PIPEDA — Specific Questions (if applicable)
 
-- Has the organization appointed a privacy officer with responsibility under BC PIPA, s. 11?
-- Is collection limited to what a reasonable person would consider appropriate for the purposes (BC PIPA, s. 11(2))?
-- Is notice of collection being provided as required (BC PIPA, s. 10)?
-- For employee personal information: Is collection, use, or disclosure for a purpose that a reasonable person would consider appropriate, and is it reasonably required for the employment relationship (BC PIPA, ss. 13–15)?
-- Has the organization prepared or updated its privacy policy as required (BC PIPA, s. 5)?
-- Are individuals' access and correction rights being honoured within 30 business days (BC PIPA, ss. 23–24)?
-- For security: Are security arrangements appropriate to the sensitivity of the information (BC PIPA, s. 34)?
-- Does the initiative involve cross-border transfers? BC PIPA requires comparable protection when transferring PI to service providers outside BC (BC PIPA, s. 33.1, per OPC/OIPC guidance); note any gap.
+- Has an individual been designated as accountable for the organization's compliance, and are their contact details available (Schedule 1, Principle 4.1; s. 5(1))?
+- Are the purposes for collection identified and documented at or before the time of collection (Schedule 1, Principle 4.2)?
+- What form of consent is being relied on (express, implied, opt-in, opt-out), and is it appropriate to the sensitivity of the PI and the reasonable expectations of the individual (Schedule 1, Principle 4.3; s. 6.1 — valid consent requires the individual to understand the nature, purpose and consequences)?
+- Is collection limited to what is necessary for the identified purposes, by fair and lawful means (Schedule 1, Principle 4.4)?
+- Are use, disclosure, and retention limited to the identified purposes, with new purposes triggering fresh consent (Schedule 1, Principle 4.5)?
+- Is PI as accurate, complete, and up-to-date as necessary for the purposes (Schedule 1, Principle 4.6)?
+- Are safeguards (physical, organizational, technological) appropriate to the sensitivity of the PI in place (Schedule 1, Principle 4.7)?
+- Are policies and practices openly available to individuals (Schedule 1, Principle 4.8)?
+- Can individuals access and correct their PI, with a response within 30 days (Schedule 1, Principle 4.9; s. 8(3))?
+- Is the breach-of-security-safeguards regime built into how the organization will respond if there is an incident: report to the OPC and notify affected individuals where there is a real risk of significant harm, and maintain breach records for 24 months (s. 10.1; Breach of Security Safeguards Regulations; OPC What you need to know about mandatory reporting of breaches of security safeguards)?
+- Where PI is transferred to a third party for processing, is comparable protection ensured by contractual or other means (Schedule 1, Principle 4.1.3; OPC Guidelines for Processing Personal Data Across Borders)?
 
-### Alberta PIPA — Specific Questions
+### 5c. BC PIPA — Specific Questions (if applicable)
 
-Ask these if Alberta PIPA applies:
+- Has the organization designated one or more individuals responsible for compliance, with publicly available contact information (s. 4)?
+- Has a privacy policy been developed and made available on request (s. 5)?
+- Is collection, use, and disclosure limited to purposes that a reasonable person would consider appropriate in the circumstances (s. 11; s. 14; s. 17)?
+- Is notice of the purposes and a contact for questions provided at or before collection (s. 10(1))?
+- Is the form of consent (express, implicit, or opt-out under s. 6-8) appropriate to the sensitivity of the PI, and is opt-out consent under s. 8(3) being used only where its narrow conditions are met?
+- For employee personal information: is the collection, use, or disclosure reasonable for the purposes of establishing, managing, or terminating an employment relationship, and has reasonable notice been given (ss. 13(2), 16(2), 19(2))?
+- Are individuals' access requests met within 30 business days, with permitted extensions properly documented (ss. 28–29)?
+- Are security arrangements reasonable and proportionate to the sensitivity of the PI (s. 34)?
+- Is PI retained only as long as reasonably necessary for legal or business purposes, then destroyed or anonymized; and where used to make a decision about the individual, retained for at least one year (s. 35)?
+- For service providers and transfers outside BC: are contractual or other measures in place to ensure comparable protection (p.6, https://www.oipc.bc.ca/documents/guidance-documents/1370)?
 
-- Has the organization designated a Privacy Officer (Alberta PIPA, s. 16)?
-- Is collection limited to what is reasonable for the purposes (Alberta PIPA, s. 11)?
-- Is notice of collection being provided (Alberta PIPA, s. 13)?
-- For employee personal information: Is collection, use, or disclosure for the purposes of managing or terminating the employment relationship (Alberta PIPA, ss. 15–17, 21–23)?
-- Has the organization prepared a privacy policy and made it available (Alberta PIPA, s. 5)?
-- Are individuals' access and correction rights being honoured within 45 days (extendable) (Alberta PIPA, ss. 24–26)?
-- For security: Are reasonable security arrangements in place (Alberta PIPA, s. 34)?
-- Does the initiative involve transfers to service providers outside Alberta? Alberta PIPA requires comparable protection (Alberta PIPA, s. 13.1 as interpreted; OPC guidance); note any gap.
-- Does the initiative involve a "significant change" to information practices requiring notification of the OIPC? (Alberta PIPA, s. 64; OIPC guidance)
 
-### Enforcement Decisions — Prompt Questions
+### 5d. Alberta PIPA — Specific Questions (if applicable)
 
-Ask the user to confirm whether any of the following scenarios apply, and note relevant enforcement history from `references/legislative-reference.md`:
+- Has the organization designated one or more individuals responsible for compliance (s. 5(3))?
+- Has a privacy policy and complaint-handling process been developed and made available on request (s. 6)?
+- Is collection limited to purposes that are reasonable, and only to the extent reasonable for those purposes (s. 11)?
+- Is notice of the purposes and contact information for the privacy officer provided at or before collection (s. 13)?
+- Is consent obtained per s. 7, applying the deemed-consent test in s. 8 only where the purpose is obvious and the individual voluntarily provides the information, or applying the opt-out conditions in s. 8(3)?
+- For employee personal information: is the collection, use, or disclosure reasonable for the purposes of establishing, managing, or terminating the employment relationship, and has reasonable notice been provided to the employee (s. 15, 18, 21)?
+- Are access requests responded to within 45 days (s.28) or the end of an extended time period under section 31 (s.28, 31)?
+- Are reasonable security arrangements in place to protect PI against risks such as unauthorized access, collection, use, disclosure, copying, modification, disposal, or destruction (s. 34)?
+- Is PI retained only as long as reasonable for legal or business purposes, then destroyed or rendered non-identifying (s. 35)?
+- For service providers outside Canada (including parent companies): has the organization given written notice describing the way the PI will be handled and the foreign country to which it may be transferred (s. 13.1, 13.2)?
+- Is there a process to provide the mandatory breach notification to the OIPC under s. 34.1 where a reasonable person would consider that a real risk of significant harm exists, and a process for the OIPC to direct individual notification under s. 37.1?
 
-- Does the initiative involve employee monitoring or surveillance? (Multiple OIPC BC and Alberta findings; note relevant decision)
-- Does the initiative involve biometric data? (Commissioner findings under PIPEDA and provincial equivalents)
-- Does the initiative involve AI or automated profiling? (OPC position papers and PIPEDA findings)
-- Does the initiative involve cross-border data transfers to the US, particularly involving US cloud providers? (OPC guidance on US CLOUD Act risk)
-- Does the initiative involve sensitive health or financial information processed by a private-sector entity?
+### 5e. Quebec Law 25 — Specific Questions (if applicable)
+
+- Has a Privacy Officer (Person in Charge of the Protection of Personal Information) been designated, and is their title and contact information published on the organization's website (s. 3.1)?
+- Has a privacy governance framework (policies and practices about retention, destruction, roles, and complaint handling) been adopted and published in clear, simple language (s. 3.2)?
+- Does this project involve the acquisition, development, or overhaul of an information system or electronic service delivery involving PI — triggering a mandatory PIA proportionate to sensitivity, purposes, quantity, distribution, and medium (s. 3.3)?
+- Is consent manifest, free, informed, given for specific purposes, granular, and presented separately from any other information; and, for sensitive PI, expressly given (s. 14)?
+- For minors under 14, is consent obtained from a parent or guardian; and is the use of PI of minors subject to heightened scrutiny (s. 14)?
+- Have privacy-protective default settings (privacy by default) been configured for any technological product or service offered to the public (s. 9.1)?
+- Are individuals informed before collection of: the purposes, means of collection, rights of access/rectification, right to withdraw consent, name of any third party for whom collection is made, and the possibility of disclosure outside Quebec (s. 8)?
+- Is automated decision-making disclosed at or before the decision, with the individual offered the right to be informed of the PI used, the reasons and principal factors, and the opportunity to submit observations to a person who can review the decision (s. 12.2)?
+- Are portability requests supported by providing computerized PI in a structured, commonly used technological format, and is there a process to communicate it to a third party on request (s. 27)?
+- Is there a process to de-index or cease dissemination of PI on request where dissemination causes serious injury that outweighs the public interest (s. 28.1)?
+- Is there a documented process to handle confidentiality incidents: take reasonable measures to reduce risk and prevent recurrence; notify the CAI and affected individuals where the incident presents a risk of serious injury; and maintain an incident register (s. 3.5; s. 3.8)?
+- For any communication of PI outside Quebec: has a transfer-specific PIA been conducted assessing legal framework adequacy in the receiving jurisdiction, and is there a written agreement in place (s. 17)?
+- Has PI been destroyed or anonymized once the purposes for which it was collected or used have been achieved, applying generally accepted best practices (s. 23)?
+- Are biometric databases declared to the CAI at least 60 days before being put into service (Act to establish a legal framework for information technology, CQLR c. C-1.1, s. 45)?
+
+### 5f. GDPR — Specific Questions (if applicable)
+
+- What is the lawful basis for each processing activity under Art. 6, and for special-category data, the additional condition under Art. 9?
+- Are the Art. 13/14 transparency requirements met in the privacy notice (identity of controller, purposes, legal basis, recipients, retention, rights, source where collected indirectly)?
+- Are data subject rights operational: access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), portability (Art. 20), objection (Art. 21), and rights related to automated decision-making (Art. 22)?
+- Is a DPIA required under Art. 35 (e.g., systematic and extensive profiling with significant effects, large-scale processing of special-category data, large-scale systematic monitoring)? Has it been completed and reviewed?
+- Has a Data Protection Officer been appointed where required (Art. 37), and is their contact information published?
+- For transfers outside the EEA: is there a valid Art. 45 adequacy decision, an Art. 46 transfer mechanism (SCCs, BCRs), or an Art. 49 derogation? Has a Transfer Impact Assessment been performed in line with EDPB Recommendations 01/2020 post-*Schrems II*?
+- Is a data processor agreement under Art. 28 in place with all processors, addressing the eight required topics?
+- Is there a process to notify the supervisory authority within 72 hours of becoming aware of a personal data breach (Art. 33), and to notify affected data subjects without undue delay where the breach is likely to result in a high risk to their rights and freedoms (Art. 34)?
+- Are records of processing activities maintained under Art. 30?
+
+### 5g. Individual Rights — Operational
+
+- Is there a documented, accessible, and free intake channel for individuals to exercise their rights (access, correction, deletion, withdrawal of consent, portability, objection, automated-decision review)?
+- Are response timelines tracked against each applicable law (PIPEDA: 30 days; BC PIPA: 30 business days; Alberta PIPA: 45 days; Quebec Law 25: 30 days; GDPR: 1 month, extendable by 2 months for complex requests)?
+- Where a request is refused, is a written response provided that states the reason, the statutory exception relied on, and the individual's right to complain to the relevant Commissioner/CAI/supervisory authority?
+- Is identity-verification proportionate (no excessive PI demanded just to verify the requester)?
+
+### 5h. Vendor and Third-Party Compliance
+
+- Are written agreements in place with every processor, sub-processor, and PI-handling vendor?
+- Do those agreements address: scope and purpose of processing, confidentiality, security measures, sub-processor controls, audit rights, breach notification timelines, return/destruction at end of term, restrictions on cross-border transfer, and cooperation with data-subject requests?
+- For each vendor, has a due-diligence assessment been performed (security certifications, sub-processor list, location of processing, government-access risk)?
+- Is the obligation to ensure comparable/equivalent protection cited and documented (PIPEDA Schedule 1, Principle 4.1.3; BC PIPA s. 33; Alberta PIPA Regulation s. 13.1; Quebec Law 25 s. 17; GDPR Art. 28)?
+
+### 5i. Mandatory PIA / DPIA / Pre-Approval Triggers
+
+- Does Quebec Law 25, s. 3.3 require a PIA (any IT system or electronic service delivery project involving PI)?
+- Does Quebec Law 25, s. 17 require a transfer-specific PIA for any communication of PI outside Quebec?
+- Does GDPR Art. 35 require a DPIA, applying the Art. 29 WP/EDPB nine criteria? Is Art. 36 prior consultation triggered?
+- Does the OIPC BC, OIPC Alberta, OPC, or CAI have published guidance recommending a PIA, prior consultation, or notification for this type of processing?
+- For health-sector processing: does PHIPA (Ontario), HIA (Alberta), or another provincial statute trigger a separate PIA obligation?
+
+### 5j. Enforcement and Precedent — Prompt Questions
+
+Confirm whether any of the following high-scrutiny scenarios apply. Each maps to existing Commissioner findings and should inform both the risk register and the standard of compliance applied:
+
+- Workplace monitoring or surveillance (keystroke logging, screen capture, GPS, video, productivity tracking)
+- Biometric data collection (facial recognition, fingerprint, voiceprint, gait, iris)
+- Automated decision-making, profiling, or AI/ML systems materially affecting individuals
+- Cross-border transfers, particularly to US cloud providers (US CLOUD Act / FISA s. 702 exposure)
+- Personal information of minors, or processing directed at children
+- Sensitive health, financial, sexual-orientation, or special-category data processed by a private-sector entity
+- Pixel, SDK, or tag-based tracking for advertising, analytics, or audience-building
+- Use of publicly available information, including web-scraped data
+- Processing in connection with law-enforcement or national-security disclosures
+
+For each "yes," flag for additional legal research and document the relevant Commissioner finding, order, or court decision applied as the standard.
 
 ---
 
@@ -564,7 +629,7 @@ For each category of processing, state the lawful basis and cite the provision:
 [Is a mandatory PIA or DPIA required? Cite: Quebec Law 25, s. 3.3 (PIA required for new projects involving PI); GDPR Art. 35 (DPIA required for high-risk processing). Note whether requirement is triggered and whether assessment satisfies it.]
 
 **5.7 Relevant Enforcement Decisions**
-[List any regulatory findings, Commissioner reports, or court decisions relevant to this type of processing. Include citation (e.g., OIPC BC Order P22-01; OPC PIPEDA Report of Findings #2022-001; *Chitrakar v. Bell TV*, 2013 FC 1103). Flag where further legal research is required. See `references/legislative-reference.md` for known citations.]
+[List any regulatory findings, Commissioner reports, or court decisions relevant to this type of processing. Include citation (e.g., OIPC BC Order P22-01; OPC PIPEDA Report of Findings #2022-001; *Chitrakar v. Bell TV*, 2013 FC 1103). Flag where further legal research is required.]
 
 ---
 
@@ -659,233 +724,3 @@ This PIA should be revisited if any of the following occur:
 *This Privacy Impact Assessment was prepared as a structured analysis tool. It does not constitute legal advice. Organizations should seek advice from qualified privacy counsel and, where required, consult with their applicable Data Protection Authority before proceeding with high-risk processing activities.*
 
 *Document version history should be maintained. Superseded versions should be archived, not deleted.*
--e 
-
----
-
-
-# Legislative Reference: Privacy Law Citation Guide
-
-This reference provides ready-to-cite statutory provisions and key enforcement decisions for use in Privacy Impact Assessments. Use these citations in Section 5 of the PIA document and wherever legal requirements are identified.
-
-**Important**: This reference reflects the law as of mid-2025. Always confirm currency with qualified privacy counsel, particularly for Quebec Law 25 (which has phased-in provisions) and any regulations in progress.
-
----
-
-## Table of Contents
-
-1. PIPEDA (Federal)
-2. BC PIPA
-3. Alberta PIPA
-4. Quebec Law 25 (Bill 64)
-5. Key Enforcement Decisions and Commissioner Reports
-6. Cross-Jurisdictional Issues
-
----
-
-## 1. PIPEDA — Personal Information Protection and Electronic Documents Act, SC 2000, c. 5
-
-### Core Obligations (Schedule 1 — CSA Model Code Principles)
-
-| Principle | Provision | Requirement |
-|---|---|---|
-| Accountability | Schedule 1, Principle 4.1 | Organization responsible for PI under its control; must designate a privacy officer |
-| Identifying Purposes | Schedule 1, Principle 4.2 | Purposes for collection must be identified at or before time of collection |
-| Consent | Schedule 1, Principle 4.3 | Knowledge and consent required for collection, use, or disclosure; form of consent depends on sensitivity |
-| Limiting Collection | Schedule 1, Principle 4.4 | Collection limited to what is necessary for identified purposes |
-| Limiting Use, Disclosure, and Retention | Schedule 1, Principle 4.5 | PI not to be used or disclosed for purposes other than those for which collected, except with consent or as required by law |
-| Accuracy | Schedule 1, Principle 4.6 | PI must be as accurate, complete, and up-to-date as necessary |
-| Safeguards | Schedule 1, Principle 4.7 | Security safeguards appropriate to sensitivity of information |
-| Openness | Schedule 1, Principle 4.8 | Policies and practices must be available to individuals |
-| Individual Access | Schedule 1, Principle 4.9 | Individuals have right to access PI about themselves; 30-day response period |
-| Challenging Compliance | Schedule 1, Principle 4.10 | Individuals may challenge compliance with the above principles |
-
-### Breach of Security Safeguards
-- **s. 10.1**: Mandatory breach reporting to OPC and affected individuals where real risk of significant harm
-- **ss. 10.2–10.3**: Reporting and notification requirements
-- **"Real risk of significant harm"** defined in s. 10.1(7): includes bodily harm, humiliation, financial loss, identity theft, damage to credit, negative effects on employment or relationships, loss of employment
-
-### Enforcement and Penalties
-- **s. 14**: Individual may apply to Federal Court after OPC investigation
-- **ss. 28–28.2**: Offences and fines for failure to report breaches, obstruction, retaliation
-
-### Third-Party Accountability
-- **Schedule 1, Principle 4.1.3**: Organization accountable for PI transferred to third party; must use contractual or other means to provide comparable protection
-
-### Substantially Similar Provinces
-- **s. 26(2)(b)**: Governor-in-Council may exempt organizations from PIPEDA with respect to PI they collect within a province that has substantially similar legislation — BC, Alberta, and Quebec are all designated substantially similar for provincially-regulated private-sector activities
-
----
-
-## 2. BC PIPA — Personal Information Protection Act, SBC 2003, c. 63
-
-### Scope
-- **s. 3**: Applies to every organization that collects, uses, or discloses PI of individuals in BC in connection with the operation of the organization's business
-- **s. 3(2)**: Does not apply to personal information collected, used, or disclosed solely for personal or domestic purposes
-
-### Core Obligations
-
-| Obligation | Section | Requirement |
-|---|---|---|
-| Privacy officer / accountability | s. 11(1) | Must designate individual responsible for compliance |
-| Privacy policy | s. 5 | Must have privacy policy; must provide on request |
-| Purposes must be reasonably required | s. 11(2) | Collection, use, disclosure only for purposes a reasonable person would consider appropriate |
-| Notice of collection | s. 10 | Must give notice of purposes and contact information before or at time of collection |
-| Collection — consent and limits | s. 6(1)–(2) | Consent required; may be express or implied; implied consent where purpose obvious and individual would reasonably expect it |
-| Sensitivity and form of consent | s. 8 | Express consent required for sensitive information; otherwise implied consent may suffice |
-| Use | s. 11 | Use only for purposes individual consented to, or as reasonably necessary for those purposes |
-| Disclosure | s. 16 | Disclosure only with consent or under enumerated exceptions (legal requirement, emergency, etc.) |
-| Accuracy | s. 33 | PI must be as accurate, complete, and up-to-date as reasonably necessary |
-| Safeguards | s. 34 | Security arrangements appropriate to sensitivity; protect against unauthorized access, disclosure, copying, use, or modification |
-| Retention | s. 35 | Retain only as long as necessary for purpose; then destroy or make anonymous |
-| Access rights | s. 23 | Individuals entitled to access their PI; must respond within 30 business days |
-| Correction rights | s. 24 | Individuals entitled to request correction; must comply or note disagreement |
-| Withdrawal of consent | s. 9 | Individuals may withdraw consent; subject to legal and contractual restrictions |
-
-### Employee Personal Information
-- **ss. 13–15**: Employer may collect, use, and disclose employee PI only for purposes reasonably required to establish, manage, or terminate the employment relationship; some purposes require consent, others do not
-- **s. 14(c)**: Exception for collection without consent where reasonable for the employment relationship (e.g., payroll, benefits, performance management)
-
-### Cross-Border Transfers
-- **s. 33.1**: Before transferring PI to service provider outside BC, must protect PI by contractual or other means; must inform individual of potential disclosure to foreign jurisdiction (per OIPC guidance and OPC position on US CLOUD Act risk)
-
-### Mandatory Breach Notification
-- BC PIPA does not yet have an explicit breach notification provision equivalent to federal PIPEDA s. 10.1 — however, **OIPC BC has taken the position** that s. 34 (safeguards) and s. 5 (accountability) together create an obligation to notify affected individuals where there is a real risk of significant harm; organizations should treat this as a de facto obligation
-
-### Enforcement
-- **s. 36**: Individuals may make complaints to OIPC BC
-- **s. 44**: OIPC may order compliance, damages, or other remedies
-- **s. 56**: Offences for wilful violation or obstruction
-
----
-
-## 3. Alberta PIPA — Personal Information Protection Act, SA 2003, c. P-6.5
-
-### Scope
-- **s. 4**: Applies to every organization in respect of PI that it collects, uses, or discloses
-- Applies to private-sector organizations in Alberta; does not apply to government bodies (covered by FOIP)
-
-### Core Obligations
-
-| Obligation | Section | Requirement |
-|---|---|---|
-| Privacy officer / accountability | s. 16(2) | Must designate individual(s) responsible for compliance |
-| Privacy policy | s. 5 | Must develop and follow a privacy policy; must provide on request |
-| Purposes must be reasonable | s. 11 | Collection only for purposes a reasonable person would consider appropriate |
-| Notice of collection | s. 13 | Must notify individuals of purposes and contact information |
-| Collection — consent | s. 7 | Must obtain consent; consent may be express or implied |
-| Implied consent standard | s. 8 | Consent implied where purpose obvious and individual would reasonably expect it given the nature of PI and circumstances |
-| Use | s. 14 | Use only for identified purposes with consent or under exceptions |
-| Disclosure | s. 19 | Disclosure only with consent or under exceptions (legal process, emergency, etc.) |
-| Accuracy | s. 33 | PI must be accurate, complete, and up-to-date for purposes used |
-| Safeguards | s. 34 | Must protect PI with security arrangements appropriate to sensitivity |
-| Retention | s. 35 | Retain only as long as necessary; then destroy or render anonymous |
-| Access rights | s. 24 | Individuals entitled to access; must respond within 45 days (extendable to 30 additional days with notice) |
-| Correction rights | s. 26 | Individuals entitled to request correction; must comply or annotate the record |
-| Withdrawal of consent | s. 9 | Individuals may withdraw consent on reasonable notice |
-
-### Employee Personal Information
-- **ss. 15–17**: Employer may collect PI without consent for purposes reasonably required to establish, manage, or terminate employment relationship
-- **ss. 21–23**: Use and disclosure of employee PI without consent in employment context; reasonable person standard applies
-
-### Cross-Border Transfers
-- **s. 13.1** (and OIPC guidance): When disclosing PI to service providers outside Alberta, must protect PI by contractual means comparable to Alberta PIPA; must inform individuals of potential disclosure to foreign jurisdiction; assess risk of foreign government access (particularly US CLOUD Act)
-
-### Mandatory Breach Notification
-- **s. 34.1** (as amended, in force 2010): Organization must notify affected individuals and OIPC of unauthorized access or disclosure where a reasonable person would consider there is a real risk of significant harm
-
-### Enforcement
-- **s. 36**: Individuals may complain to OIPC Alberta
-- **s. 52**: OIPC may order compliance, damages, or other remedies
-- **s. 59**: Offences for wilful violations
-
----
-
-## 4. Quebec Law 25 — Act Respecting the Protection of Personal Information in the Private Sector, CQLR c. P-39.1 (as amended by Bill 64, An Act to Modernize Legislative Provisions as Regards the Protection of Personal Information, SQ 2021, c. 25)
-
-*Note: Quebec Law 25 amendments came into force in three phases: September 2022, September 2023, and September 2023/2024. Confirm which provisions are in force for the relevant date.*
-
-### Key Provisions
-
-| Obligation | Section | Requirement |
-|---|---|---|
-| Mandatory PIA | s. 3.3 | PIA required for any project to acquire, develop, or overhaul an IT system or electronic service delivery involving PI; must be completed before project launch |
-| Privacy by Default | s. 9 | PI collected only to the extent necessary; must be the most privacy-protective parameters by default |
-| Consent — clear and free | s. 12 | Consent must be manifest, free, and informed; in clear and simple language; specific to purposes |
-| Withdrawal of consent | s. 12 | Individual may withdraw consent at any time |
-| Sensitive information | s. 12 | Express consent required for sensitive PI (health, financial, biometric, etc.) |
-| Data minimization | s. 9 | Collect only PI that is necessary for the specific purpose |
-| Portability | s. 27 | Individual may request PI in a structured, commonly used technological format; right to have PI communicated to third party |
-| Deletion / right to be forgotten | s. 28 | Individual may request that PI be de-indexed or ceased to be communicated; applies to PI collected when individual was a minor |
-| Automated decision-making | s. 12.1 | Individual must be informed when PI used to render a decision based exclusively on automated processing; right to have decision reviewed by a person |
-| Privacy Officer | s. 3.1 | Enterprise must publish contact information of privacy officer |
-| Breach notification | s. 3.5 | Must notify Commission d'accès à l'information (CAI) and affected individuals of confidentiality incident with risk of serious injury |
-| Cross-border transfers | ss. 17–18 | PI may only be communicated outside Quebec if recipient ensures equivalent protection; privacy impact assessment required before transfer |
-| Destruction or anonymization | s. 23 | PI destroyed or anonymized once purpose fulfilled |
-
-### Penalties
-- **s. 90.1**: Administrative monetary penalties up to $10M or 2% of worldwide turnover (whichever greater) for non-compliance
-- **s. 91**: Penal fines up to $25M or 4% of worldwide turnover for aggravated offences
-
----
-
-## 5. Key Enforcement Decisions and Commissioner Reports
-
-### OPC (Office of the Privacy Commissioner of Canada — PIPEDA)
-
-| Reference | Topic | Key Finding |
-|---|---|---|
-| OPC Report of Findings #2023-001 (*Cadillac Fairview*) | Facial recognition in retail | Collection of biometric data via facial recognition without meaningful consent violated PIPEDA Principles 4.2, 4.3, 4.7; OPC found that capturing biometric data of individuals browsing a mall without notice constituted collection without consent |
-| OPC Report of Findings re: *Home Depot* (2020) | Customer data sharing with Facebook without consent | Sharing customer transaction data with Facebook via pixel tracking without consent violated PIPEDA Principles 4.3 and 4.5 |
-| OPC Report of Findings re: *Clearview AI* (2021) | Biometric scraping and facial recognition | Scraping images without consent and building biometric database violated all applicable consent and purpose limitation principles; joint investigation with BC, Alberta, and Quebec |
-| OPC Guidance — US CLOUD Act (2019/updated) | Cross-border transfers to US cloud providers | OPC position: organizations must assess risk that foreign law (US CLOUD Act) may compel disclosure; must inform individuals; safeguards include contractual protections |
-| OPC Position Paper — AI and Automated Decision-Making (2023) | AI/ML profiling | Sets out expectations under PIPEDA for transparency, meaningful consent, and human review where AI decisions significantly affect individuals |
-
-### OIPC BC (Office of the Information and Privacy Commissioner for BC)
-
-| Reference | Topic | Key Finding |
-|---|---|---|
-| OIPC BC Order P22-01 | Employee monitoring software | Keystroke logging and screen capture of remote employees without adequate notice violated BC PIPA ss. 11, 13; surveillance must be reasonably required and individuals must be informed |
-| OIPC BC Order P21-01 | Collection of customer facial images | Collection of facial images for fraud prevention without adequate notice and consent violated BC PIPA; organization could not rely on implied consent for biometric collection |
-| OIPC BC Investigation Report F21-03 | Cross-border cloud storage | Transferring PI to US-based servers creates risk under US CLOUD Act; BC PIPA s. 33.1 requires contractual protections and individual notification |
-| OIPC BC Guidance — Privacy Impact Assessments | When to conduct PIAs | OIPC BC recommends PIAs for any new program or service involving PI; recommends consultation with OIPC for high-risk processing |
-
-### OIPC Alberta (Office of the Information and Privacy Commissioner for Alberta)
-
-| Reference | Topic | Key Finding |
-|---|---|---|
-| OIPC Alberta Order P2023-01 | Employee GPS tracking | Continuous GPS tracking of employees outside work hours not reasonably required for employment relationship; violated Alberta PIPA s. 14 |
-| OIPC Alberta Investigation Report P2021-IR-001 | Retail loyalty program consent | Implied consent insufficient for secondary use of purchase data for third-party marketing; express consent required; violated Alberta PIPA ss. 7, 14 |
-| OIPC Alberta Order P2020-02 | Biometric timekeeping (fingerprints) | Fingerprint collection for timekeeping requires express consent under Alberta PIPA s. 7; reasonable person test not met where alternative was available |
-| OIPC Alberta Guidance — Data Breach Notification | Breach notification standard | Sets out OIPC Alberta expectations under s. 34.1; "real risk of significant harm" is the threshold; notification should be prompt and specific |
-
-### Court Decisions
-
-| Reference | Topic | Relevance |
-|---|---|---|
-| *Chitrakar v. Bell TV*, 2013 FC 1103 | PIPEDA individual access | Federal Court confirmed right of access under PIPEDA s. 8; clarified scope of "personal information" under the Act |
-| *Douez v. Facebook*, 2017 SCC 33 | Forum selection and PIPEDA | Supreme Court found BC residents could pursue PIPEDA claims in BC courts despite Facebook's forum selection clause; consumer privacy rights interpreted broadly |
-| *R v. Spencer*, 2014 SCC 43 | Reasonable expectation of privacy in subscriber info | SCC held individuals have reasonable expectation of privacy in subscriber information associated with IP address; highly relevant for any initiative involving IP address collection or law enforcement requests |
-
----
-
-## 6. Cross-Jurisdictional Issues
-
-### Which Law Applies? Decision Guide
-
-| Scenario | Law(s) That Apply |
-|---|---|
-| Private-sector org collecting PI of BC residents for commercial purposes, operating in BC | BC PIPA (primarily); PIPEDA does not apply to provincially-regulated activities in BC |
-| Private-sector org collecting PI of Alberta residents for commercial purposes, operating in Alberta | Alberta PIPA (primarily); PIPEDA does not apply to provincially-regulated activities in Alberta |
-| Federally-regulated business (bank, telecom, airline) operating in BC or Alberta | PIPEDA applies; BC/Alberta PIPA does not |
-| Private-sector org collecting PI across provinces including Ontario | PIPEDA applies to Ontario and federally regulated activities; check for sector-specific Ontario legislation (PHIPA, etc.) |
-| Processing PI of Quebec residents | Quebec Law 25 applies to private sector; PIPEDA applies to federally regulated activities |
-| Processing PI of EU residents | GDPR applies regardless of where the organization is located, if offering goods/services or monitoring behaviour of EU data subjects (GDPR, Art. 3(2)) |
-| Multiple jurisdictions apply | Identify the most stringent applicable requirement for each obligation; comply with all |
-
-### Conflict / Overlap Notes
-
-- BC and Alberta PIPA are "substantially similar" to PIPEDA — organizations complying with BC or Alberta PIPA in their provincial operations are generally exempt from PIPEDA for that PI
-- Quebec Law 25 has stricter consent requirements, portability rights, and a mandatory PIA requirement that exceeds PIPEDA
-- Where GDPR applies alongside Canadian law, GDPR typically sets the higher standard (particularly for consent, data subject rights, and mandatory DPIAs)
-- For cross-border transfers: Quebec Law 25 requires a PIA before any transfer; BC and Alberta require contractual protections and individual notice; PIPEDA requires accountability and comparable protection
