@@ -17,8 +17,6 @@ A Privacy Impact Assessment is a structured process for identifying and mitigati
 This skill produces PIAs aligned with:
 - **Canadian federal law**: PIPEDA (Personal Information Protection and Electronic Documents Act)
 - **Canadian provincial law**: Quebec Law 25 (Bill 64 / Act respecting the protection of personal information in the private sector), BC PIPA (Personal Information Protection Act, SBC 2003, c. 63), Alberta PIPA (Personal Information Protection Act, SA 2003, c. P-6.5), and provincial health privacy equivalents (PHIPA, HIA)
-- **GDPR**: Art. 35 DPIA requirements (EU standard)
-- **General best practice**: ISO 29134, NIST Privacy Framework
 
 ---
 
@@ -331,35 +329,23 @@ This reference contains the full question set for each PIA section. The agent sh
 
 - Has a Privacy Officer (Person in Charge of the Protection of Personal Information) been designated, and is their title and contact information published on the organization's website (s. 3.1)?
 - Has a privacy governance framework (policies and practices about retention, destruction, roles, and complaint handling) been adopted and published in clear, simple language (s. 3.2)?
-- Does this project involve the acquisition, development, or overhaul of an information system or electronic service delivery involving PI — triggering a mandatory PIA proportionate to sensitivity, purposes, quantity, distribution, and medium (s. 3.3)?
-- Is consent manifest, free, informed, given for specific purposes, granular, and presented separately from any other information; and, for sensitive PI, expressly given (s. 14)?
-- For minors under 14, is consent obtained from a parent or guardian; and is the use of PI of minors subject to heightened scrutiny (s. 14)?
+- !!Does this project involve the acquisition, development, or overhaul of an information system or electronic service delivery involving PI — triggering a mandatory PIA proportionate to sensitivity, purposes, quantity, distribution, and medium (s. 3.3)?
+- !!Is consent manifest, free, informed, given for specific purposes and presented separately from any other information; and, for sensitive PI, expressly given (s. 14)?
+- For minors under 14, is consent obtained from a parent or guardian (s. 14)?
 - Have privacy-protective default settings (privacy by default) been configured for any technological product or service offered to the public (s. 9.1)?
 - Are individuals informed before collection of: the purposes, means of collection, rights of access/rectification, right to withdraw consent, name of any third party for whom collection is made, and the possibility of disclosure outside Quebec (s. 8)?
-- Is automated decision-making disclosed at or before the decision, with the individual offered the right to be informed of the PI used, the reasons and principal factors, and the opportunity to submit observations to a person who can review the decision (s. 12.2)?
-- Are portability requests supported by providing computerized PI in a structured, commonly used technological format, and is there a process to communicate it to a third party on request (s. 27)?
+- Is automated decision-making disclosed at or before the decision, with the individual offered the right to be informed of the PI used, the reasons and principal factors, and the opportunity to submit observations to a person who can review the decision (s. 12.1)?
+- Are portability requests supported by providing computerized PI, not including inferred data, in a structured, commonly used technological format, and is there a process to communicate it to a third party on request (s. 27)?
 - Is there a process to de-index or cease dissemination of PI on request where dissemination causes serious injury that outweighs the public interest (s. 28.1)?
 - Is there a documented process to handle confidentiality incidents: take reasonable measures to reduce risk and prevent recurrence; notify the CAI and affected individuals where the incident presents a risk of serious injury; and maintain an incident register (s. 3.5; s. 3.8)?
 - For any communication of PI outside Quebec: has a transfer-specific PIA been conducted assessing legal framework adequacy in the receiving jurisdiction, and is there a written agreement in place (s. 17)?
 - Has PI been destroyed or anonymized once the purposes for which it was collected or used have been achieved, applying generally accepted best practices (s. 23)?
 - Are biometric databases declared to the CAI at least 60 days before being put into service (Act to establish a legal framework for information technology, CQLR c. C-1.1, s. 45)?
 
-### 5f. GDPR — Specific Questions (if applicable)
-
-- What is the lawful basis for each processing activity under Art. 6, and for special-category data, the additional condition under Art. 9?
-- Are the Art. 13/14 transparency requirements met in the privacy notice (identity of controller, purposes, legal basis, recipients, retention, rights, source where collected indirectly)?
-- Are data subject rights operational: access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), portability (Art. 20), objection (Art. 21), and rights related to automated decision-making (Art. 22)?
-- Is a DPIA required under Art. 35 (e.g., systematic and extensive profiling with significant effects, large-scale processing of special-category data, large-scale systematic monitoring)? Has it been completed and reviewed?
-- Has a Data Protection Officer been appointed where required (Art. 37), and is their contact information published?
-- For transfers outside the EEA: is there a valid Art. 45 adequacy decision, an Art. 46 transfer mechanism (SCCs, BCRs), or an Art. 49 derogation? Has a Transfer Impact Assessment been performed in line with EDPB Recommendations 01/2020 post-*Schrems II*?
-- Is a data processor agreement under Art. 28 in place with all processors, addressing the eight required topics?
-- Is there a process to notify the supervisory authority within 72 hours of becoming aware of a personal data breach (Art. 33), and to notify affected data subjects without undue delay where the breach is likely to result in a high risk to their rights and freedoms (Art. 34)?
-- Are records of processing activities maintained under Art. 30?
-
 ### 5g. Individual Rights — Operational
 
-- Is there a documented, accessible, and free intake channel for individuals to exercise their rights (access, correction, deletion, withdrawal of consent, portability, objection, automated-decision review)?
-- Are response timelines tracked against each applicable law (PIPEDA: 30 days; BC PIPA: 30 business days; Alberta PIPA: 45 days; Quebec Law 25: 30 days; GDPR: 1 month, extendable by 2 months for complex requests)?
+- Is there a documented, accessible, and free intake channel for individuals to exercise their rights (access, correction, deletion, withdrawal of consent, portability, automated-decision review)?
+- Are response timelines tracked against each applicable law (PIPEDA: 30 days; BC PIPA: 30 business days; Alberta PIPA: 45 days; Quebec Law 25: 30 days)?
 - Where a request is refused, is a written response provided that states the reason, the statutory exception relied on, and the individual's right to complain to the relevant Commissioner/CAI/supervisory authority?
 - Is identity-verification proportionate (no excessive PI demanded just to verify the requester)?
 
@@ -368,15 +354,7 @@ This reference contains the full question set for each PIA section. The agent sh
 - Are written agreements in place with every processor, sub-processor, and PI-handling vendor?
 - Do those agreements address: scope and purpose of processing, confidentiality, security measures, sub-processor controls, audit rights, breach notification timelines, return/destruction at end of term, restrictions on cross-border transfer, and cooperation with data-subject requests?
 - For each vendor, has a due-diligence assessment been performed (security certifications, sub-processor list, location of processing, government-access risk)?
-- Is the obligation to ensure comparable/equivalent protection cited and documented (PIPEDA Schedule 1, Principle 4.1.3; BC PIPA s. 33; Alberta PIPA Regulation s. 13.1; Quebec Law 25 s. 17; GDPR Art. 28)?
-
-### 5i. Mandatory PIA / DPIA / Pre-Approval Triggers
-
-- Does Quebec Law 25, s. 3.3 require a PIA (any IT system or electronic service delivery project involving PI)?
-- Does Quebec Law 25, s. 17 require a transfer-specific PIA for any communication of PI outside Quebec?
-- Does GDPR Art. 35 require a DPIA, applying the Art. 29 WP/EDPB nine criteria? Is Art. 36 prior consultation triggered?
-- Does the OIPC BC, OIPC Alberta, OPC, or CAI have published guidance recommending a PIA, prior consultation, or notification for this type of processing?
-- For health-sector processing: does PHIPA (Ontario), HIA (Alberta), or another provincial statute trigger a separate PIA obligation?
+- Is the obligation to ensure comparable/adequate protection conveyed (PIPEDA Schedule 1, Principle 4.1.3; Quebec Law 25 s. 17)?
 
 ### 5j. Enforcement and Precedent — Prompt Questions
 
@@ -385,14 +363,14 @@ Confirm whether any of the following high-scrutiny scenarios apply. Each maps to
 - Workplace monitoring or surveillance (keystroke logging, screen capture, GPS, video, productivity tracking)
 - Biometric data collection (facial recognition, fingerprint, voiceprint, gait, iris)
 - Automated decision-making, profiling, or AI/ML systems materially affecting individuals
-- Cross-border transfers, particularly to US cloud providers (US CLOUD Act / FISA s. 702 exposure)
+- Cross-border transfers, particularly to US cloud providers (US CLOUD Act exposure)
 - Personal information of minors, or processing directed at children
 - Sensitive health, financial, sexual-orientation, or special-category data processed by a private-sector entity
 - Pixel, SDK, or tag-based tracking for advertising, analytics, or audience-building
 - Use of publicly available information, including web-scraped data
 - Processing in connection with law-enforcement or national-security disclosures
 
-For each "yes," flag for additional legal research and document the relevant Commissioner finding, order, or court decision applied as the standard.
+For each "yes," flag for additional legal research and provide a short plain language summary of the issue.
 
 ---
 
@@ -468,7 +446,6 @@ For each risk identified in Section 7, document:
 - Are mitigations proportionate to the risk level?
 - Are mitigations feasible within the initiative's timeline and budget?
 - Are there mitigations that would require changes to the initiative's design, scope, or technology? Have those been communicated to the business sponsor?
--e 
 
 ---
 
