@@ -1,6 +1,6 @@
 # Privacy Impact Assessment Agent
 
-An AI agent skill framework for conducting structured, legally-grounded Privacy Impact Assessments (PIAs) and enforcing security best practices in AI-assisted workflows.
+An AI agent skill framework for conducting structured, legally-grounded Privacy Impact Assessments (PIAs) and enforcing security best practices in AI-assisted workflows. Nothing in this repository or generated using its materials is legal advice. It is information in an experimental spirit.
 
 ## Overview
 
