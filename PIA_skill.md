@@ -306,9 +306,9 @@ This reference contains the full question set for each PIA section. The agent sh
 - Is the form of consent (express, implicit, or opt-out under s. 6-8) appropriate to the sensitivity of the PI, and is opt-out consent under s. 8(3) being used only where its narrow conditions are met?
 - For employee personal information: is the collection, use, or disclosure reasonable for the purposes of establishing, managing, or terminating an employment relationship, and has reasonable notice been given (ss. 13(2), 16(2), 19(2))?
 - Are individuals' access requests met within 30 business days, with permitted extensions properly documented (ss. 28–29)?
-- Are security arrangements reasonable and proportionate to the sensitivity of the PI (s. 34)?
+- Are security arrangements reasonable (s. 34)?
 - Is PI retained only as long as reasonably necessary for legal or business purposes, then destroyed or anonymized; and where used to make a decision about the individual, retained for at least one year (s. 35)?
-- For service providers and transfers outside BC: are contractual or other measures in place to ensure comparable protection (p.6, https://www.oipc.bc.ca/documents/guidance-documents/1370)?
+- For service providers and transfers outside BC: are contractual or other measures in place to protect personal data (https://www.oipc.bc.ca/documents/guidance-documents/1370)?
 
 
 ### 5d. Alberta PIPA — Specific Questions (if applicable)
@@ -322,23 +322,23 @@ This reference contains the full question set for each PIA section. The agent sh
 - Are access requests responded to within 45 days (s.28) or the end of an extended time period under section 31 (s.28, 31)?
 - Are reasonable security arrangements in place to protect PI against risks such as unauthorized access, collection, use, disclosure, copying, modification, disposal, or destruction (s. 34)?
 - Is PI retained only as long as reasonable for legal or business purposes, then destroyed or rendered non-identifying (s. 35)?
-- For service providers outside Canada (including parent companies): has the organization given written notice describing the way the PI will be handled and the foreign country to which it may be transferred (s. 13.1, 13.2)?
+- For service providers outside Canada (including parent companies): has the organization given written notice describing the way the PI will be handled and the foreign country to which it may be transferred (s. 13.1)?
 - Is there a process to provide the mandatory breach notification to the OIPC under s. 34.1 where a reasonable person would consider that a real risk of significant harm exists, and a process for the OIPC to direct individual notification under s. 37.1?
 
 ### 5e. Quebec Law 25 — Specific Questions (if applicable)
 
 - Has a Privacy Officer (Person in Charge of the Protection of Personal Information) been designated, and is their title and contact information published on the organization's website (s. 3.1)?
 - Has a privacy governance framework (policies and practices about retention, destruction, roles, and complaint handling) been adopted and published in clear, simple language (s. 3.2)?
-- !!Does this project involve the acquisition, development, or overhaul of an information system or electronic service delivery involving PI — triggering a mandatory PIA proportionate to sensitivity, purposes, quantity, distribution, and medium (s. 3.3)?
-- !!Is consent manifest, free, informed, given for specific purposes and presented separately from any other information; and, for sensitive PI, expressly given (s. 14)?
+- Does this project involve the acquisition, development, or overhaul of an information system or electronic service delivery involving PI — triggering a mandatory PIA proportionate to sensitivity, purposes, quantity, distribution, and medium (s. 3.3)?
+- Is consent manifest, free, informed, given for specific purposes and presented separately from any other information; and, for sensitive PI, expressly given (s. 12, 14)?
 - For minors under 14, is consent obtained from a parent or guardian (s. 14)?
 - Have privacy-protective default settings (privacy by default) been configured for any technological product or service offered to the public (s. 9.1)?
-- Are individuals informed before collection of: the purposes, means of collection, rights of access/rectification, right to withdraw consent, name of any third party for whom collection is made, and the possibility of disclosure outside Quebec (s. 8)?
-- Is automated decision-making disclosed at or before the decision, with the individual offered the right to be informed of the PI used, the reasons and principal factors, and the opportunity to submit observations to a person who can review the decision (s. 12.1)?
+- Are individuals informed before collection of: the purposes, means of collection, rights of access/rectification, right to withdraw consent, name of any third party for whom collection is made, and the possibility of transfer outside Quebec (s. 8)?
+- Is automated decision-making disclosed at or before the decision, with the individual, on request, offered the right to be informed of the PI used, the reasons and principal factors, and the opportunity to submit observations to a person who can review the decision (s. 12.1)?
 - Are portability requests supported by providing computerized PI, not including inferred data, in a structured, commonly used technological format, and is there a process to communicate it to a third party on request (s. 27)?
-- Is there a process to de-index or cease dissemination of PI on request where dissemination causes serious injury that outweighs the public interest (s. 28.1)?
-- Is there a documented process to handle confidentiality incidents: take reasonable measures to reduce risk and prevent recurrence; notify the CAI and affected individuals where the incident presents a risk of serious injury; and maintain an incident register (s. 3.5; s. 3.8)?
-- For any communication of PI outside Quebec: has a transfer-specific PIA been conducted assessing legal framework adequacy in the receiving jurisdiction, and is there a written agreement in place (s. 17)?
+- Is there a process to de-index or cease dissemination of PI on request where certain factors apply (s. 28.1)?
+- Is there a documented process to handle confidentiality incidents: take reasonable measures to reduce risk and prevent recurrence; notify the CAI and affected individuals where the incident presents a risk of serious injury; and maintain an incident register (s. 3.5, s. 3.8)?
+- For any communication of PI outside Quebec: has a transfer-specific PIA been conducted assessing legal framework in the receiving jurisdiction, and is there a written agreement in place (s. 17)?
 - Has PI been destroyed or anonymized once the purposes for which it was collected or used have been achieved, applying generally accepted best practices (s. 23)?
 - Are biometric databases declared to the CAI at least 60 days before being put into service (Act to establish a legal framework for information technology, CQLR c. C-1.1, s. 45)?
 
